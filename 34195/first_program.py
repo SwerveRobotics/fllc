@@ -1,6 +1,7 @@
-form spike import MortorPair
+from spike.spike import *
 
-motor_pair = MotorPair('E','A')
-motor_pair.set_default_speed(50)
+mp = MotorPair('E','A')
+mp.set_default_speed(50)
+mp.set_motor_rotation(5.6,'cm')
 
-motor_pair.move(50,'cm')
+mp.move(50,'cm')
